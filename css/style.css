@@ -1,0 +1,425 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #4e4e4e;
+}
+
+.menu {
+    background-color: rgba(0, 0, 0, 0.6)!important;
+}
+
+.menu a {
+    color: #fff!important;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 12px 20px;
+}
+
+.nav-item a:hover,
+.dropdown-menu {
+    background-color: #0078ff;
+}
+
+header {
+    background-image: url(../img/hero-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+#home .items h1 {
+    text-transform: uppercase;
+    font-size: 5rem;
+    position: relative;
+    bottom: 20px;
+}
+
+#home .items h1::after {
+    content: "";
+    position: absolute;
+    height: 80px;
+    top: 100%;
+    left: 150px;
+    font-weight: 300;
+    font-size: 2rem;
+    animation-name: name;
+    animation-duration: 3.5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes name {
+    10% {
+        content: "We";
+    }
+    20% {
+        content: "Web D";
+    }
+    30% {
+        content: "Web Desi";
+    }
+    40% {
+        content: "Web Designer";
+    }
+    50% {
+        content: "|";
+    }
+    60% {
+        content: "Web";
+    }
+    70% {
+        content: "Web Dev";
+    }
+    80% {
+        content: "Web Develo";
+    }
+    90% {
+        content: "Web Developer";
+    }
+    100% {
+        content: "|";
+    }
+}
+
+#home .items h1::before {
+    content: "";
+    position: absolute;
+    height: 80px;
+    top: 100%;
+    left: 60%;
+    font-weight: 300;
+    font-size: 2rem;
+    animation-name: anime;
+    animation-duration: 3.5s;
+    animation-delay: 4s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anime {
+    10% {
+        content: "P";
+    }
+    20% {
+        content: "Pho";
+    }
+    30% {
+        content: "Photo";
+    }
+    40% {
+        content: "Photographer";
+    }
+    50% {
+        content: "|";
+    }
+    60% {
+        content: "Ph";
+    }
+    70% {
+        content: "Pho";
+    }
+    80% {
+        content: "Photo";
+    }
+    90% {
+        content: "Photoshop";
+    }
+    100% {
+        content: "|";
+    }
+}
+
+.title h3 {
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.title p {
+    position: relative;
+}
+
+.title p::after {
+    content: '';
+    position: absolute;
+    left: 48%;
+    top: 150%;
+    width: 46px;
+    height: 5px;
+    background-color: #007aff;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    background-color: rgb(0, 120, 255, 0.7);
+}
+
+.overlay1 {
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.6);
+    ;
+}
+
+.parent-content {
+    background-color: #fff;
+}
+
+.child h3 {
+    position: relative;
+}
+
+.child h3::after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    background-color: #0078ff;
+    width: 100px;
+    bottom: -12px;
+    left: 0;
+}
+
+.services .service-card {
+    background-color: #fff;
+    border-radius: 14px;
+    padding: 8px 12px;
+    box-shadow: 0px 10px 19px -15px rgba(0, 0, 0, 0.75);
+    /* transform: scale(1.2); */
+}
+
+.services .service-card p {
+    font-size: 0.8rem;
+    padding: 10px 10px;
+}
+
+.services .card-icon .ico {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 1.5rem auto;
+    box-shadow: 0 0 0 6px #0078ff;
+    transition: all 0.4s;
+}
+
+.services .card-icon:hover .ico {
+    background-color: #007aff;
+    box-shadow: 0 0 0 6px rgb(0, 120, 255, 0.4);
+    color: #fff;
+}
+
+.services .card-icon i {
+    font-size: 2.5rem;
+}
+
+
+/* end of services */
+
+.achievments {
+    background-image: url(../img/post-3.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.achievments h5 {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.achievments .card-icon .ico {
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    margin: 1.5rem auto;
+    border: 6px solid rgba(255, 255, 255, 0.5);
+    /* box-shadow: 0 0 0 6px ; */
+}
+
+.achievments .card-icon i {
+    font-size: 1.75rem;
+    color: white;
+}
+
+
+/* end of achievments */
+
+.portfolio .icon {
+    width: 45px;
+    height: 45px;
+    bottom: 20px;
+    right: 10px;
+    border: 4px solid #007aff;
+    border-radius: 50%;
+}
+
+.portfolio .icon i {
+    font-size: 1.2rem;
+}
+
+.portfolio .caption {
+    box-shadow: 0.2px 8px 7px -4px rgba(0, 0, 0, 0.6);
+}
+
+.portfolio .caption p {
+    font-size: 0.75rem;
+}
+
+.portfolio .caption h4 {
+    font-size: 1.25rem;
+}
+
+.portfolio .card img {
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.portfolio .card:hover img {
+    transform: scale(1.2);
+}
+
+
+/* end of portfolio */
+
+.testomonial {
+    background-image: url(../img/overlay-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.testomonial .comment {
+    padding: 90px 0;
+}
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+
+/* end of testomonial section */
+
+.blog h6 {
+    top: -7.5%;
+    left: 37.5%;
+    background-color: #007aff;
+}
+
+.blog .card-blog2 h6 {
+    top: -7.5%;
+    left: 30.5%;
+    background-color: #007aff;
+}
+
+.blog .card-body p {
+    margin-bottom: 0;
+}
+
+.blog .card-body a {
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: black;
+    font-weight: 500;
+    transition: all 0.4s;
+}
+
+.blog .card-body:hover a {
+    color: #007aff;
+}
+
+.blog .card-footer {
+    box-shadow: 0.2px 8px 7px -4px rgba(0, 0, 0, 0.6);
+}
+
+.blog .card-footer a {
+    text-decoration: none;
+    font-size: 0.85rem;
+    color: black;
+    font-weight: 500;
+    transition: all 0.4s;
+}
+
+.blog .card-footer:hover a {
+    color: #007aff;
+}
+
+.blog .card-footer img {
+    width: 35px;
+    height: 35px;
+}
+
+
+/* end of blog */
+
+.contact {
+    background-image: url(../img/overlay-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.contact .form .btn {
+    border-radius: 25px;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.contact .details .child {
+    margin-bottom: 38px;
+}
+
+.contact .contact-ico {
+    width: 35px;
+    height: 35px;
+    font-size: 1.2rem;
+    box-shadow: 0 0 0 2px #007aff;
+    transition: all 0.3s;
+}
+
+.contact .contant-details i {
+    color: #0078ff;
+    font-size: 1.25rem;
+}
+
+.contact .contact-ico:hover,
+.contact .form .btn:hover {
+    background-color: #007aff;
+    color: #fff;
+    box-shadow: 0 0 0 4px rgb(0, 120, 255, 0.4);
+    font-weight: 600;
+}
+
+
+/* end of contact section */
+
+.footer {
+    height: 100px;
+    background-color: #007aff;
+}
+
+.go-up {
+    width: 45px;
+    height: 45px;
+    background-color: rgba(0, 0, 0, 0.6);
+    bottom: 5px;
+    right: 7px;
+    font-size: 1.75rem;
+}
+
+@media all and (max-width:767px) {
+    #home .items h1::before {
+        top: 250px;
+        left: 30%;
+    }
+    .title p::after {
+        left: 46%;
+    }
+    .blog .card-blog2 h6 {
+        left: 36.5%;
+    }
+}
